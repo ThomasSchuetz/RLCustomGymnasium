@@ -6,7 +6,7 @@ Example for creating a custom gymnasium for playing with reinforcement learning
 This medium post by Paco Nathan:
 https://medium.com/distributed-computing-with-ray/anatomy-of-a-custom-environment-for-rllib-327157f269e5
 
-Sadly, this post used an old version of Ray, which is no longer compatible. This repo uses gymnasium instead of gym to comply with the current (version 2.3.1) way of modeling a custom environment in Ray.
+Sadly, this post used an old version of `ray`, which is no longer compatible. This repo uses `gymnasium` instead of `gym` to comply with the current (version 2.3.1) way of modeling a custom environment in `ray`.
 
 # Files in this repository
 
@@ -24,6 +24,10 @@ Sadly, this post used an old version of Ray, which is no longer compatible. This
 - `apply_policy.py` &rarr; Run the previously learned policy a few times to illustrate that the agent has learned how to optimize this gym.
 - `sampling.py` &rarr; Basic, manual test of how the environment behaves when given arbitrary actions.
 - `training.py` &rarr; Train the agent on the custom environment.
+
+# Interesting commands to simplify training
+
+- `tensorboard --logdir=<path to ray results>` &rarr; Create graphs to visualize training progress
 
 # Used open source libraries:
 
